@@ -1,46 +1,199 @@
-.menu {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Ankole/scarf.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    width: 50%;
-    height: 1000px;
-    align-items: center;
+@font-face {
+    font-family: poppins;
+    src: url(poppins/Poppins-Regular.ttf);
+}
+
+body {
+    font-family: poppins;
+    margin: auto;
+}
+
+.menu{
+    margin-top: 5%;
+    margin-left: 4%;
+    line-height: 0.6;
+    p {
+        color: white;
+        margin-left: 45%;
+        margin-top: 15%;
+        font-size: 25px;
+    }
 
     h1 {
         font-size: 60px;
         color: orangered;
         text-align: center;
-        top: 10%;
-        padding-top: 15%;
-    }
+        margin-right: 2%;
 
-    img {
+    }
+}
+.menu img{
         height: 200px;
         width: 270px;
-        top: 70%;
-        padding: 15%;
+        margin-top: 1%;
+        margin-left: 33vh;
+        margin-bottom: 10%;
+    
+}
+.menu-page {
+    display: flex;
+    overflow-y: hidden;
+    height: 100vh;
+    font-size: 15px;
+}
 
-    }}
+.navigation {
+    display: flex;
+    height: 50px;
+    width: 45%;
+    gap: 5%;
+    background-color: black;
 
-    .navigation {
-        display: flex;
-        height: 50px;
-        width: 45%;
-        gap: 5%;
-        background-color: black;
+    padding: 1%;
+    border-radius: 50px;
+    position: absolute;
+    top: 90%;
+    align-items: center;
+}
 
-        padding: 1%;
-        border-radius: 50px;
-        position: absolute;
-        top: 90%;
-        align-items: center;
+.navigation a {
+    color: white;
+    text-decoration: none;
+}
+
+#icon {
+    color: white;
+}
+#booking{
+    height: 50px;
+    width:150px;
+    background-color: white;
+    border-radius: 30px;
+    border: none;
+    font-size: 17px;
+}
+
+.left-section {
+    width: 50%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Ankole/scarf.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 100vh;
+    align-items: center;
+
+}
+
+.right-section {
+    width: 50%;
+    background-color: black;
+    color: white;
+    overflow-y: scroll;
+}
+
+.list {
+    width: 90%;
+    margin: auto;
+}
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    margin-left: 15%;
+    gap: 5%;
+    font-size: 17px;
+    margin-bottom: 4%;
+}
+
+.time {
+    font-size: 15px;
+    line-height: 0.7;
+}
+
+.main {
+    display: flex;
+    gap: 2%;
+    color: orangered;
+    font-size: large;
+}
+
+.menu-list {
+    line-height: 0.2;
+
+}
+
+.prices {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    line-height: 0.8;
+
+}
+
+.ankole-breakfast{
+    margin-top: 8%;
+}
+
+#ankole-logo {
+    height: 80px;
+    width: 100px;
+}
+
+.breakfast-detail {
+    line-height: 1.5;
+    p {
+        font-size: 15px;
     }
+}
 
-    .navigation a {
-        color: white;
-        text-decoration: none;
-    }
+.breakfast-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3%;
 
-    #icon {
-        color: white;
-    }
+}
+
+.ankole-big {
+    display: flex;
+    gap:3%;
+    align-items: center;
+    width: 80%;
+}
+
+.soup-price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 0.4;
+}
+
+#food{
+    margin-top: 5%;
+}
+
+#soup{
+    margin-bottom: 2%;
+    color: orangered;
+}
+.sandwich{
+    margin: 3%;
+    color: orangered;
+
+}
+#salad{
+    margin:5% 0;
+    color: orangered;
+}
+
+#orange-text{
+    color: orangered;
+  
+}
+
+.fries{
+    margin-top: 7%;
+}
+.wings{
+    margin-top: 7%;
+}
