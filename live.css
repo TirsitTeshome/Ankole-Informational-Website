@@ -1,0 +1,66 @@
+@font-face {
+    font-family: poppins;
+    src: url(poppins/Poppins-Regular.ttf);
+}
+
+body {
+    font-family: poppins;
+    margin: auto;
+}
+.navigation {
+    position: fixed;
+    display: flex;
+    height: 50px;
+    width: 45%;
+    gap: 5%;
+    background-color: black;
+    padding: 1%;
+    border-radius: 50px;
+    position: absolute;
+    top: 90%;
+    align-items: center;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+}
+
+#booking {
+    height: 50px;
+    width: 150px;
+    background-color: white;
+    border-radius: 30px;
+    border: none;
+    font-size: 17px;
+}
+
+.acoustic{
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Ankole/reserve.jpeg);
+    filter: blur(7px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150vh;
+
+}
+
+.live-pics{
+    display: inline;
+    line-height: 2;
+    margin-top: -75%;
+    position: absolute;
+    margin-left: 30%;
+}
+
+.live-pics img{
+    height: 340px;
+    width: 340px;
+    margin-left: 50%;
+   
+}
+
+.music{
+    display: flex;
+    color: white;
+}

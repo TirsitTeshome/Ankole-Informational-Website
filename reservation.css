@@ -1,0 +1,119 @@
+@font-face {
+    font-family: poppins;
+    src: url(poppins/Poppins-Regular.ttf);
+}
+
+body {
+    font-family: poppins;
+    margin: auto;
+}
+.karibu-text {
+    margin-top: 5%;
+    margin-left: 4%;
+    line-height: 0.6;
+
+    p {
+        color: white;
+        margin-left: 45%;
+        margin-top: 15%;
+        font-size: 25px;
+    }
+
+    h1 {
+        font-size: 60px;
+        color: orangered;
+        text-align: center;
+        margin-right: 2%;
+
+    }
+}
+
+.reservation{
+    display: flex;
+    overflow-y: hidden;
+    height: 100vh;
+    font-size: 15px;
+    justify-content: space-between;
+}
+.left-part {
+    width: 50%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Ankole/reserve.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 100vh;
+    align-items: center;
+
+}
+.karibu-text img {
+    height: 200px;
+    width: 270px;
+    margin-top: 1%;
+    margin-left: 33vh;
+    margin-bottom: 10%;
+}
+.navigation {
+    display: flex;
+    height: 50px;
+    width: 45%;
+    gap: 5%;
+    background-color: black;
+    padding: 1%;
+    border-radius: 50px;
+    position: absolute;
+    top: 90%;
+    align-items: center;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+}
+
+.right-section {
+    width: 50%;
+    background-color: black;
+    color: white;
+    padding-left: 5%;
+   padding-top: 5%;
+}
+input{
+    width: 85%;
+    height: 50px;
+    border: white;
+    margin-bottom: 2%;
+    
+}
+
+label{
+    /* margin-bottom: 5%; */
+    font-size: 13px;
+}
+
+.input-group {
+    margin-top: 3%;
+    margin: auto;
+    color: darkgray;
+    margin-bottom: 2%;
+}
+
+#icon {
+    color: white;
+}
+
+#booking {
+    height: 50px;
+    width: 150px;
+    background-color: white;
+    border-radius: 30px;
+    border: none;
+    font-size: 17px;
+}
+
+button{
+    width: 85%;
+    height: 70px;
+    margin-top: 3%;
+    border-radius: 15px;
+    font-size: 19px;
+}

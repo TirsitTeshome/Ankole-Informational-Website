@@ -8,10 +8,11 @@ body {
     margin: auto;
 }
 
-.menu{
+.menu {
     margin-top: 5%;
     margin-left: 4%;
     line-height: 0.6;
+
     p {
         color: white;
         margin-left: 45%;
@@ -27,14 +28,15 @@ body {
 
     }
 }
-.menu img{
-        height: 200px;
-        width: 270px;
-        margin-top: 1%;
-        margin-left: 33vh;
-        margin-bottom: 10%;
-    
+
+.menu img {
+    height: 200px;
+    width: 270px;
+    margin-top: 1%;
+    margin-left: 33vh;
+    margin-bottom: 10%;
 }
+
 .menu-page {
     display: flex;
     overflow-y: hidden;
@@ -48,7 +50,6 @@ body {
     width: 45%;
     gap: 5%;
     background-color: black;
-
     padding: 1%;
     border-radius: 50px;
     position: absolute;
@@ -64,9 +65,10 @@ body {
 #icon {
     color: white;
 }
-#booking{
+
+#booking {
     height: 50px;
-    width:150px;
+    width: 150px;
     background-color: white;
     border-radius: 30px;
     border: none;
@@ -119,6 +121,7 @@ body {
 
 .menu-list {
     line-height: 0.2;
+    align-items: center;
 
 }
 
@@ -126,11 +129,11 @@ body {
     color: white;
     display: flex;
     justify-content: space-between;
-    line-height: 0.8;
+    line-height: 0.4;
 
 }
 
-.ankole-breakfast{
+.ankole-breakfast {
     margin-top: 8%;
 }
 
@@ -141,6 +144,7 @@ body {
 
 .breakfast-detail {
     line-height: 1.5;
+
     p {
         font-size: 15px;
     }
@@ -156,44 +160,53 @@ body {
 
 .ankole-big {
     display: flex;
-    gap:3%;
+    gap: 3%;
     align-items: center;
     width: 80%;
 }
 
-.soup-price{
+.soup-price {
     display: flex;
     justify-content: space-between;
     align-items: center;
     line-height: 0.4;
 }
 
-#food{
+#food {
     margin-top: 5%;
 }
 
-#soup{
+#soup {
     margin-bottom: 2%;
     color: orangered;
 }
-.sandwich{
+
+.sandwich {
     margin: 3%;
     color: orangered;
 
 }
-#salad{
-    margin:5% 0;
+
+#salad {
+    margin: 5% 0;
     color: orangered;
 }
 
-#orange-text{
+#orange-text {
     color: orangered;
-  
+    margin-top: 7%;
+    margin-bottom: 3%;
+
 }
 
-.fries{
+.fries {
     margin-top: 7%;
 }
-.wings{
+
+.wings {
     margin-top: 7%;
+}
+
+#sentences {
+    margin-top: 4%;
 }

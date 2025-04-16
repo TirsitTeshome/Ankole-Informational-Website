@@ -1,0 +1,115 @@
+@font-face {
+    font-family: poppins;
+    src: url(poppins/Poppins-Regular.ttf);
+}
+
+body {
+    font-family: poppins;
+    margin: auto;
+}
+
+.navigation {
+    display: flex;
+    height: 50px;
+    width: 45%;
+    gap: 5%;
+    background-color: black;
+    padding: 1%;
+    border-radius: 50px;
+    position: absolute;
+    top: 90%;
+    align-items: center;
+    margin-left: 25%;
+}
+
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+}
+
+#icon {
+    color: white;
+}
+
+#booking{
+    height: 50px;
+    width:150px;
+    background-color: white;
+    border-radius: 30px;
+    border: none;
+    font-size: 17px;
+}
+
+.event-places{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+    h1{
+        font-size: 50px;
+    }
+}
+
+.accra{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Ankole/accra.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    align-items: center;
+    width:33%;
+
+}
+
+.nairobi{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://cdn.prod.website-files.com/65aa1f78e2380ad0548de50d/65e86d89c0ebe6000d4a549a_nairobi_pavilion_2024.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    align-items: center;
+    width:33%;
+    margin-top: -7%;
+    img{
+        height: 200px;
+        width: 270px;
+        margin-top: 30%;
+    }
+
+}
+#nairobi-location{
+    margin-top: -54%;
+}
+
+.zanzibar{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://cdn.prod.website-files.com/65aa1f78e2380ad0548de50d/65d4a8fe4fa225ceb84e736c_Zanzibar.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    align-items: center;
+        width:33%;
+}
+
+#accra-detail{
+    margin-top: 40vh;
+    line-height: 1.4;
+    }
+
+
+    #logo{
+        height:200px;
+        width: 220px;
+    margin-top: 30%;
+    }
+
+#pax{
+    color: yellow;
+}
+
+#pavilion{
+    color: darkgray;
+}
+
+.contact-icons{
+    color:;
+    top: 50vh;
+    font-size: 300px;
+}
