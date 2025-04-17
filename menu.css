@@ -25,7 +25,6 @@ body {
         color: orangered;
         text-align: center;
         margin-right: 2%;
-
     }
 }
 
@@ -43,36 +42,49 @@ body {
     height: 100vh;
     font-size: 15px;
 }
-
 .navigation {
+    position: fixed;
     display: flex;
     height: 50px;
-    width: 45%;
-    gap: 5%;
+    width: 39%;
+    gap: 4%;
     background-color: black;
     padding: 1%;
     border-radius: 50px;
     position: absolute;
-    top: 90%;
+    top: 87vh;
     align-items: center;
+    margin-left: 5%;
+    padding-left: 2%;
+    background-color: rgb(8, 8, 8);
 }
 
 .navigation a {
     color: white;
     text-decoration: none;
 }
-
-#icon {
-    color: white;
+.navigation a:hover{
+    color: gray;
 }
 
-#booking {
+.navigation button {
     height: 50px;
     width: 150px;
-    background-color: white;
+    background-color: rgb(90, 88, 88);
     border-radius: 30px;
     border: none;
     font-size: 17px;
+    color:white
+}
+
+.navigation button:hover{
+    background-color: white;
+    color: black;
+}
+
+#icon{
+    font-size: 22px;
+    color: white;
 }
 
 .left-section {
@@ -104,7 +116,7 @@ body {
     margin-left: 15%;
     gap: 5%;
     font-size: 17px;
-    margin-bottom: 4%;
+    margin-bottom: 6%;
 }
 
 .time {
@@ -209,4 +221,28 @@ body {
 
 #sentences {
     margin-top: 4%;
+}
+
+.contact-icons{
+    display: flex;
+    gap: 0.7%;
+    border-color: white;
+    font-size: 15px;  
+}
+
+#whatsapp{
+    position: absolute;
+    border: 1px solid rgb(192, 190, 190);
+    width:3%;
+    height:30px;
+    font-size: 33px;
+    text-align: center;
+    border-radius: 100px;
+    padding-bottom: 0.8%;
+    padding-top: 0.5%;
+    color: rgb(192, 190, 190);
+    left: 93%;
+   top:90%;
+   background-color:rgba(128, 124, 124, 0.24);
+
 }

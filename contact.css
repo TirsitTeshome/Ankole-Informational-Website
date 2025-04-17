@@ -18,24 +18,33 @@ body {
     height: 200px;
     height: 220px;
     margin-left: 42%;
-    margin-top: 5%;
+    margin-top: 3%;
 }
 
-#icon {
-    color: white;
-}
+
 .navigation {
+    position: fixed;
     display: flex;
     height: 50px;
-    width: 45%;
-    gap: 5%;
+    width: 39%;
+    gap: 4%;
     background-color: black;
     padding: 1%;
     border-radius: 50px;
     position: absolute;
-    top: 85%;
+    top: 87vh;
     align-items: center;
-    margin-left: 25%;
+    margin-left: 28%;
+    padding-left: 2%;
+    background-color: rgb(8, 8, 8);
+}
+
+.navigation a:hover{
+    color: gray;
+}
+#icon{
+    font-size: 22px;
+    color: white;
 }
 
 .navigation a {
@@ -43,16 +52,24 @@ body {
     text-decoration: none;
 }
 
+.navigation a:hover{
+    color: gray;
+}
 
-#booking {
+.navigation button {
     height: 50px;
     width: 150px;
-    background-color: white;
+    background-color: rgb(90, 88, 88);
     border-radius: 30px;
     border: none;
     font-size: 17px;
+    color:white;
+    cursor: pointer;
 }
-
+.navigation button:hover{
+    background-color: white;
+    color: black;
+}
 .both-locations{
     display: flex;
     gap:1%;
@@ -73,6 +90,11 @@ body {
     font-size: 17px;
 }
 
+.kitisuru a{
+    color: white;
+    text-decoration: none;
+}
+
 .kilimani{
     border: white 3px solid;
     height: 380px;
@@ -83,4 +105,81 @@ body {
     text-align: left;
     padding-left: 3%;
     font-size: 17px;
+}
+
+.kilimani a{
+    color: white;
+    text-decoration: none;
+}
+
+.contact-icons{
+    display: flex;
+    border-color: white;
+    font-size: 15px;  
+}
+
+#ig{
+    position: absolute;
+    border: 1px solid rgb(94, 91, 91);
+    width:1.7%;
+    height: 15px;
+    text-align: center;
+    border-radius: 70px;
+    padding-bottom: 0.5%;
+    padding-top: 0.5%;
+    top:5vh;
+    color: rgb(94, 91, 91);
+    left:92.7%;
+
+    a{
+        text-decoration: none;
+        cursor: pointer;
+        z-index: 5;
+        color: white; 
+    }
+}
+
+#facebook{
+    position: absolute;
+    border: 0.5px solid rgb(94, 91, 91);
+    width:1.7%;
+    height: 10px;
+    text-align: center;
+    border-radius: 100px;
+    padding-bottom: 0.8%;
+    padding-top: 0.5%;
+    color: rgb(94, 91, 91);; 
+    left: 95%;
+    top:5vh; 
+    
+
+    a{
+        text-decoration: none;
+        cursor: pointer;
+        z-index: 5;
+        color: white;
+        
+    }
+}
+
+
+
+#whatsapp{
+    right: 4%;
+    border: 1px solid rgb(104, 102, 102);
+    font-size: xx-large;
+    bottom: 6%;
+    padding: 0.5% 0.7%;
+    border-radius: 50%;
+    background-color: rgb(22, 20, 20);
+    color: rgb(245, 241, 241);
+    position: absolute;
+    position: fixed;
+    a{
+        text-decoration: none;
+        z-index: 5;
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+    }
 }

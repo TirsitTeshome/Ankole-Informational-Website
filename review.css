@@ -5,65 +5,7 @@
 
 body {
     font-family: poppins;
-    overflow: hidden;
-}
-
-.location {
-    display: flex;
-    position: relative;
-}
-
-.kitisuru {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://cdn.prod.website-files.com/65aa1f78e2380ad0548de50d/65c34fee7c31fcb2f8c3700b_001.jpg);
-    height: 100vh;
-    background-size: cover;
-    width: 50%;
-    color: white;
-    text-align: center;
-    top: 20%;
     margin: auto;
-
-}
-
-.kitisuru a {
-    text-decoration: none;
-    color: white;
-}
-
-.kilimani {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Ankole/location2.jpg);
-    height: 100vh;
-    width: 50%;
-    color: white;
-    text-align: center;
-
-}
-
-.kilimani a {
-    text-decoration: none;
-    color: white;
-}
-
-#text {
-    margin-top: 45%;
-
-    h1 {
-        font-size: 50px;
-    }
-
-    line-height: 0.8;
-}
-
-.logo {
-    position: relative;
-    display: inline-block;
-    top: -85vh;
-    margin-left: 43%;
-
-    img {
-        height: 200px;
-        width: 270px;
-    }
 }
 
 .navigation {
@@ -76,15 +18,11 @@ body {
     padding: 1%;
     border-radius: 50px;
     position: absolute;
-    top: 87vh;
+    top: 82vh;
     align-items: center;
     margin-left: 28%;
     padding-left: 2%;
     background-color: rgb(8, 8, 8);
-}
-
-.navigation a:hover{
-    color: gray;
 }
 #icon{
     font-size: 22px;
@@ -100,6 +38,11 @@ body {
     color: gray;
 }
 
+.navigation button:hover{
+background-color:white;
+color: black;
+}
+
 .navigation button {
     height: 50px;
     width: 150px;
@@ -107,16 +50,56 @@ body {
     border-radius: 30px;
     border: none;
     font-size: 17px;
-    color:white
+    color:white;
+    cursor: pointer;
+}
+.review-section {
+    background-color: black;
+    color: white;
+    height: 100vh;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    gap:3%;
+    padding-left: 20%;
+    margin-bottom: 4%;
 }
 
-.navigation button:hover{
-    background-color: white;
-    color: black;
-}
-#orange-text {
+#quote-left{
     color: orangered;
+    margin-left: 5%;
+    position: relative;
+
 }
+#quote-right{
+    color: orangered;
+    position: relative;
+}
+.review img {
+    height: 200px;
+    width: 270px;
+    margin-top: -70vh;
+}
+
+.review h, p{
+    margin-bottom: 6%;
+}
+
+.left{
+    display: inline-block;
+    margin-top: -10%;
+    font-size: 40px;
+    line-height: 1.8;
+}
+
+.right{
+    display: inline-block;
+    margin-top: 5%;
+    font-size: 40px;
+    line-height: 1.8;
+}
+
+
 
 .contact-icons{
     display: flex;
@@ -125,16 +108,7 @@ body {
     font-size: 15px;  
 }
 
-.contact-icons {
-    display: flex;
-    gap: 0.7%;
-    border-color: white;
-    font-size: 15px;  
-}
-
 #ig{
-    a{
-    
     position: absolute;
     border: 1px solid rgb(94, 91, 91);
     width:1.8%;
@@ -145,11 +119,10 @@ body {
     padding-top: 0.5%;
     top:5vh;
     color: rgb(94, 91, 91);
-    left:93%;}
+    left:95.5%;
 }
 
 #facebook{
-    a{
     position: absolute;
     border: 1px solid rgb(94, 91, 91);
     width:1.8%;
@@ -160,11 +133,10 @@ body {
     padding-top: 0.5%;
     color: rgb(94, 91, 91);; 
     left: 93%;
-    top:5vh;} 
+    top:5vh; 
 }
 
 #whatsapp{
-    a{
     position: absolute;
     border: 1px solid rgb(192, 190, 190);
     width:3%;
@@ -176,5 +148,5 @@ body {
     padding-top: 0.5%;
     color: rgb(212, 206, 206); 
     top:90vh;
-    left: 90%;
-}}
+    left: 94%;
+}

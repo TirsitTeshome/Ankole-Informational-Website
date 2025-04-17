@@ -7,6 +7,7 @@ body {
     font-family: poppins;
     margin: auto;
 }
+
 .karibu-text {
     margin-top: 5%;
     margin-left: 4%;
@@ -28,13 +29,14 @@ body {
     }
 }
 
-.reservation{
+.reservation {
     display: flex;
     overflow-y: hidden;
     height: 100vh;
     font-size: 15px;
     justify-content: space-between;
 }
+
 .left-part {
     width: 50%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Ankole/reserve.jpeg);
@@ -45,24 +47,36 @@ body {
     align-items: center;
 
 }
+
 .karibu-text img {
     height: 200px;
     width: 270px;
     margin-top: 1%;
-    margin-left: 33vh;
+    margin-left: 30vh;
     margin-bottom: 10%;
 }
+
 .navigation {
+    position: fixed;
     display: flex;
     height: 50px;
-    width: 45%;
-    gap: 5%;
+    width: 39%;
+    gap: 4%;
     background-color: black;
     padding: 1%;
     border-radius: 50px;
     position: absolute;
-    top: 90%;
+    top: 87vh;
     align-items: center;
+    margin-left: 27%;
+    padding-left: 2%;
+    background-color:rgb(8, 8, 8)
+}
+
+
+#icon {
+    font-size: 22px;
+    color: white;
 }
 
 .navigation a {
@@ -70,50 +84,86 @@ body {
     text-decoration: none;
 }
 
+.navigation a:hover{
+    color: gray;
+
+}
+.navigation button {
+    height: 50px;
+    width: 150px;
+    background-color: rgb(90, 88, 88);
+    border-radius: 30px;
+    border: none;
+    font-size: 17px;
+    color:white
+}
+.navigation button:hover{
+    background-color: white;
+    color: black;
+}
+
 .right-section {
     width: 50%;
     background-color: black;
-    color: white;
+    color: black;
     padding-left: 5%;
-   padding-top: 5%;
-}
-input{
-    width: 85%;
-    height: 50px;
-    border: white;
-    margin-bottom: 2%;
-    
+    padding-top: 3%;
 }
 
-label{
-    /* margin-bottom: 5%; */
+input {
+    width: 85%;
+    height: 45px;
+    border: gray 1px solid;
+    background-color: black;
+    margin-bottom: 1.5%;
+    margin-top: 0.5%;
+    color: white;
+}
+
+label {
     font-size: 13px;
 }
 
 .input-group {
-    margin-top: 3%;
+    margin-top: 1%;
     margin: auto;
     color: darkgray;
     margin-bottom: 2%;
+    background-color: black;
+    /* box-shadow: 0px 10px 10px -5px rgb(247, 247, 247); */
 }
 
 #icon {
     color: white;
 }
 
-#booking {
-    height: 50px;
-    width: 150px;
-    background-color: white;
-    border-radius: 30px;
-    border: none;
-    font-size: 17px;
-}
 
-button{
+
+button {
     width: 85%;
-    height: 70px;
-    margin-top: 3%;
+    height: 63px;
+    margin-top: 1%;
     border-radius: 15px;
     font-size: 19px;
+    border: none;
+}
+.contact-icons{
+    display: flex;
+    gap: 0.7%;
+    border-color: white;
+    font-size: 15px;  
+}
+#whatsapp{
+    position: absolute;
+    border: 1px solid rgb(192, 190, 190);
+    width:3%;
+    height: 30px;
+    font-size: 35px;
+    text-align: center;
+    border-radius: 100px;
+    padding-bottom: 0.8%;
+    padding-top: 0.5%;
+    color: rgb(212, 206, 206); 
+    top:90vh;
+    left: 94%;
 }

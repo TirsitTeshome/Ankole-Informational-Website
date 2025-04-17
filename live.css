@@ -6,19 +6,35 @@
 body {
     font-family: poppins;
     margin: auto;
+    overflow-x: hidden;
 }
+
 .navigation {
     position: fixed;
     display: flex;
     height: 50px;
-    width: 45%;
-    gap: 5%;
+    width: 39%;
+    gap: 4%;
     background-color: black;
     padding: 1%;
     border-radius: 50px;
     position: absolute;
-    top: 90%;
+    top: 85vh;
     align-items: center;
+    margin-left: 5%;
+    padding-left: 2%;
+    position: fixed;
+    z-index: 10;
+    background-color: rgb(8, 8, 8);
+}
+
+.navigation a:hover {
+    color: gray;
+}
+
+#icon {
+    font-size: 22px;
+    color: white;
 }
 
 .navigation a {
@@ -26,41 +42,126 @@ body {
     text-decoration: none;
 }
 
-#booking {
+
+
+.navigation button {
     height: 50px;
     width: 150px;
-    background-color: white;
+    background-color: rgb(90, 88, 88);
     border-radius: 30px;
     border: none;
     font-size: 17px;
+    color: white
 }
 
-.acoustic{
+.navigation button:hover {
+    background-color: white;
+    color: black;
+}
+
+#whatsapp {
+    position: fixed;
+    z-index: 10;
+    border: 1px solid rgb(192, 190, 190);
+    width: 3%;
+    height: 30px;
+    font-size: 35px;
+    text-align: center;
+    border-radius: 100px;
+    padding-bottom: 0.8%;
+    padding-top: 0.5%;
+    color: rgb(212, 206, 206);
+    top: 90vh;
+    left: 93%;
+}
+
+#logo {
+    img {
+        height: 200px;
+        width: 270px;
+    }
+}
+
+
+.entire {
     width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Ankole/reserve.jpeg);
-    filter: blur(7px);
+}
+
+.acoustic {
+    width: 100%;
+    position: absolute;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://img.freepik.com/free-photo/young-adults-playing-percussion-instruments-music-festival-generated-by-ai_24640-82003.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 150vh;
-
+    z-index: -1;
 }
 
-.live-pics{
+.live-pics {
     display: inline;
-    line-height: 2;
-    margin-top: -75%;
     position: absolute;
-    margin-left: 30%;
+    align-items: center;
+    color: white;
+    left: 50%;
+    top: 3%;
+    width: 100%;
 }
 
-.live-pics img{
+.live-pics img {
     height: 340px;
     width: 340px;
-    margin-left: 50%;
-   
+    margin-right: -30%;
+    margin-bottom: 2%;
+    border-radius: 10px;
 }
 
-.music{
+.music {
     display: flex;
     color: white;
+    gap: 3%;
+    transition: transform 0.3s;
+    left: 30%;
+}
+
+.music:hover img {
+    transform: scale(1.1);
+}
+
+.music-text {
+    margin-top: 6%;
+    line-height: 0.6;
+    align-items: center;
+
+    p {
+        color: orangered;
+     
+    }
+}
+.text{
+    line-height: 0.5;
+    margin-top: 80%;
+}
+.right-side {
+    z-index: 1;
+    position: fixed;
+    align-items: center;
+    text-align: center;
+    margin-left: 20%;
+    margin-top: 6%;
+    font-size: 30px;
+    color: white;
+
+    h1 {
+        color: orangered;
+        font-size: 70px;
+    }
+
+    margin-bottom: 20%;
+
+}
+
+.right-side img {
+    height: 200px;
+    width: 220 px;
+    bottom: 20vh;
 }
