@@ -70,7 +70,7 @@ body {
 }
 
 #ig {
-    position: absolute;
+    position: fixed;
     border: 1px solid rgb(94, 91, 91);
     width: 1.7%;
     height: 15px;
@@ -81,17 +81,16 @@ body {
     top: 5vh;
     color: rgb(94, 91, 91);
     left: 92.7%;
+    z-index: 5;
 
     a {
         text-decoration: none;
-        cursor: pointer;
-        z-index: 5;
         color: white;
     }
 }
 
 #facebook {
-    position: absolute;
+    position: fixed;
     border: 0.5px solid rgb(94, 91, 91);
     width: 1.7%;
     height: 10px;
@@ -118,11 +117,12 @@ body {
     border: 1px solid rgb(104, 102, 102);
     font-size: xx-large;
     bottom: 6%;
+    right: 5%;
     padding: 0.5% 0.7%;
     border-radius: 50%;
     background-color: rgb(22, 20, 20);
     color: rgb(245, 241, 241);
-    position: absolute;
+    /* position: absolute; */
     position: fixed;
 
     a {
@@ -130,7 +130,6 @@ body {
         z-index: 5;
         color: white;
         text-decoration: none;
-        cursor: pointer;
     }
 }
 
@@ -195,7 +194,7 @@ body {
 nav {
     position: fixed;
     display: flex;
-    background-color: black;
+    background-color: rgb(10, 10, 10);
     z-index: 7;
     position: absolute;
     bottom: 1%;
@@ -243,3 +242,263 @@ nav {
     background-color: white;
     color: black;
 }
+
+
+
+
+
+
+
+@media only screen and (max-width: 430px) {
+    .whole img {
+        height: 100px;
+        align-items: center;
+        margin-left: 38%;
+        margin-top: 10%;
+    }
+
+    .both-locations {
+        flex-direction: column;
+        font-size: 10px;
+    }
+    
+    .kitisuru {
+        margin-left: 15%;
+        border: white 1px solid;
+        height: 260px;
+        width: 70%;
+        align-items: center;
+        color: white;
+        text-align: center;
+        padding-left: 2%;
+        font-size: 15px;
+        margin-bottom: 5%;
+    }
+
+    .kitisuru a {
+        color: white;
+        text-decoration: none;
+    }
+
+
+    .kilimani {
+        margin-left: 15%;
+        border: white 1px solid;
+        height: 300px;
+        width: 70%;
+        align-items: center;
+        color: white;
+        text-align: center;
+        padding-left: 2%;
+        font-size: 15px;
+    }
+
+    .kilimani a {
+        color: white;
+        text-decoration: none;
+    }
+
+    nav {
+        position: fixed;
+        display: flex;
+        background-color: black;
+        position: absolute;
+        bottom: 8%;
+        left: 50%;
+        width: 85%;
+        border-radius: 3rem;
+        border: none;
+        justify-content: space-between;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+        font-size: 10px;
+
+
+        i {
+            color: gray;
+            font-size: 10px;
+        }
+        #clock {
+            font-size: 10px;
+        }
+    }
+
+    #booking-button {
+        height: 25px;
+        width: 70px;
+        border-radius: 50px;
+        border: none;
+        font-size: 10px;
+        padding-top: 1.5%;
+        padding-left: 2%;
+    }
+    #ig {
+        position: absolute;
+  
+        width: 6%;
+        height: 15px;
+        text-align: center;
+        border-radius: 70px;
+        padding-bottom: 1%;
+        padding-top: 1%;
+        top: 5vh;
+        color: rgb(94, 91, 91);
+        left: 85%;
+    
+        a {
+            text-decoration: none;
+            cursor: pointer;
+            z-index: 5;
+            color: white;
+        }
+    }
+    
+    #facebook {
+        position: absolute;
+        border: 0.5px solid rgb(94, 91, 91);
+        width: 5%;
+        height: 10px;
+        text-align: center;
+        border-radius: 100px;
+        padding-bottom: 2%;
+        padding-top: 0.5%;
+        color: rgb(94, 91, 91);
+        left: 93%;
+        top: 5.2vh;
+    
+    
+        a {
+            text-decoration: none;
+            cursor: pointer;
+            z-index: 5;
+            color: white;
+    
+        }
+    }
+}
+
+
+
+    @media only screen and (min-width: 431px) and (max-width: 768px){
+
+
+        .whole img {
+            height: 200px;
+            align-items: center;
+            margin-left: 38%;
+            margin-top: 10%;
+        }
+
+        .both-locations {
+            display: flex;
+            font-size: 10px;
+            margin-top: 7%;
+        }
+        .kitisuru {
+            margin-left:5%;
+            border: white 1px solid;
+            height: 330px;
+            width: 40%;
+            color: white;
+            padding-left: 4%;
+            font-size: 15px;
+            margin-bottom: 5%;
+        }
+    
+    
+        .kilimani {
+            margin-left: 1%;
+            border: white 1px solid;
+            height: 400px;
+            width: 41%;
+            align-items: center;
+            color: white;
+            padding-left: 6%;
+            font-size: 15px;
+        }
+    
+        .kilimani a {
+            color: white;
+            text-decoration: none;
+        }
+    
+        nav {
+            position: fixed;
+            display: flex;
+            background-color: black;
+            position: absolute;
+            bottom: 8%;
+            left: 50%;
+            width: 85%;
+            border-radius: 3rem;
+            border: none;
+            justify-content: space-between;
+            transform: translate(-50%, -50%);
+            cursor: pointer;
+            font-size: 17px;
+    
+    
+            i {
+                color: gray;
+                font-size: 18px;
+            }
+            #clock {
+                font-size: 18px;
+            }
+        }
+    
+        #booking-button {
+            height: 25px;
+            width: 70px;
+            border-radius: 50px;
+            border: none;
+            font-size: 10px;
+            padding-top: 1.5%;
+            padding-left: 2%;
+        }
+        #ig {
+            position: absolute;
+      
+            width: 6%;
+            height: 15px;
+            text-align: center;
+            border-radius: 70px;
+            padding-bottom: 1%;
+            padding-top: 1%;
+            top: 5vh;
+            color: rgb(94, 91, 91);
+            left: 85%;
+        
+            a {
+                text-decoration: none;
+                cursor: pointer;
+                z-index: 5;
+                color: white;
+            }
+        }
+        
+        #facebook {
+            position: absolute;
+            border: 0.5px solid rgb(94, 91, 91);
+            width: 5%;
+            height: 10px;
+            text-align: center;
+            border-radius: 100px;
+            padding-bottom: 2%;
+            padding-top: 0.5%;
+            color: rgb(94, 91, 91);
+            left: 93%;
+            top: 5.2vh;
+        
+        
+            a {
+                text-decoration: none;
+                cursor: pointer;
+                z-index: 5;
+                color: white;
+        
+            }
+
+
+          }  }
+   
