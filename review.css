@@ -1,152 +1,308 @@
 @font-face {
-    font-family: poppins;
-    src: url(poppins/Poppins-Regular.ttf);
+  font-family: poppins;
+  src: url(poppins/Poppins-Regular.ttf);
 }
 
 body {
-    font-family: poppins;
-    margin: auto;
+  overflow: hidden;
+  font-family: poppins;
 }
 
-.navigation {
-    position: fixed;
-    display: flex;
-    height: 50px;
-    width: 39%;
-    gap: 4%;
-    background-color: black;
-    padding: 1%;
-    border-radius: 50px;
-    position: absolute;
-    top: 82vh;
-    align-items: center;
-    margin-left: 28%;
-    padding-left: 2%;
-    background-color: rgb(8, 8, 8);
+.fixed-page {
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
 }
-#icon{
-    font-size: 22px;
+
+.contact-icons {
+  display: flex;
+  border-color: white;
+  font-size: 15px;
+}
+
+#ig {
+  position: absolute;
+  border: 1px solid rgb(94, 91, 91);
+  width: 1.7%;
+  height: 15px;
+  text-align: center;
+  border-radius: 70px;
+  padding-bottom: 0.5%;
+  padding-top: 0.5%;
+  top: 5vh;
+  color: rgb(94, 91, 91);
+  left: 92.7%;
+
+  a {
+    text-decoration: none;
+    cursor: pointer;
+    z-index: 5;
     color: white;
+  }
 }
 
-.navigation a {
+#facebook {
+  position: absolute;
+  border: 0.5px solid rgb(94, 91, 91);
+  width: 1.7%;
+  height: 10px;
+  text-align: center;
+  border-radius: 100px;
+  padding-bottom: 0.8%;
+  padding-top: 0.5%;
+  color: rgb(94, 91, 91);
+  left: 95%;
+  top: 5vh;
+
+
+  a {
+    text-decoration: none;
+    cursor: pointer;
+    z-index: 5;
+    color: white;
+
+  }
+}
+
+#whatsapp {
+  right: 4%;
+  border: 1px solid rgb(104, 102, 102);
+  font-size: xx-large;
+  bottom: 6%;
+  padding: 0.5% 0.7%;
+  border-radius: 50%;
+  background-color: rgb(22, 20, 20);
+  color: rgb(245, 241, 241);
+  position: absolute;
+  position: fixed;
+
+  a {
+    text-decoration: none;
+    z-index: 5;
     color: white;
     text-decoration: none;
-}
-
-.navigation a:hover{
-    color: gray;
-}
-
-.navigation button:hover{
-background-color:white;
-color: black;
-}
-
-.navigation button {
-    height: 50px;
-    width: 150px;
-    background-color: rgb(90, 88, 88);
-    border-radius: 30px;
-    border: none;
-    font-size: 17px;
-    color:white;
     cursor: pointer;
-}
-.review-section {
-    background-color: black;
-    color: white;
-    height: 100vh;
-    text-align: center;
-    align-items: center;
-    display: flex;
-    gap:3%;
-    padding-left: 20%;
-    margin-bottom: 4%;
+  }
 }
 
-#quote-left{
-    color: orangered;
-    margin-left: 5%;
-    position: relative;
-
-}
-#quote-right{
-    color: orangered;
-    position: relative;
-}
-.review img {
-    height: 200px;
-    width: 270px;
-    margin-top: -70vh;
+.menu-pop-up {
+  position: relative;
+  display: inline-block;
 }
 
-.review h, p{
+.menu-list {
+  position: absolute;
+  top: -35vh;
+  width: 20vh;
+  padding: 100% 150%;
+  border-radius: 1rem;
+  display: none;
+  z-index: 20;
+  background-color: black;
+  margin-left: -100%;
+}
+
+
+.menu-pop-up:hover .menu-list {
+  display: block;
+}
+
+
+.open-hours {
+  position: relative;
+  display: inline-block;
+  line-height: 1.2;
+
+  h3 {
     margin-bottom: 6%;
+  }
+
+  h4 {
+    margin-bottom: -3%;
+    font-weight: bolder;
+  }
+
+  i {
+    font-size: 23px;
+  }
 }
 
-.left{
-    display: inline-block;
-    margin-top: -10%;
-    font-size: 40px;
-    line-height: 1.8;
+.open-hours-detail {
+  top: -34vh;
+  width: 20vh;
+  margin-left: -100%;
+  display: none;
+  background-color: white;
+  position: absolute;
+  padding: 100% 150%;
+  border-radius: 1rem;
+  color: black;
+
 }
 
-.right{
-    display: inline-block;
-    margin-top: 5%;
-    font-size: 40px;
-    line-height: 1.8;
+.open-hours:hover .open-hours-detail {
+  color: black;
+  display: block;
+}
+
+nav {
+  position: fixed;
+  display: flex;
+  background-color: black;
+  z-index: 7;
+  position: absolute;
+  bottom: 1%;
+  left: 50%;
+  width: 35%;
+  align-items: center;
+  padding: 0.8% 1.5%;
+  border-radius: 3rem;
+  border: 1px solid transparent;
+  justify-content: space-between;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  font-size: medium;
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+
+  i {
+    color: gray;
+    font-size: 23px;
+  }
+
+  a:hover {
+    color: gray;
+  }
 }
 
 
-
-.contact-icons{
-    display: flex;
-    gap: 0.7%;
-    border-color: white;
-    font-size: 15px;  
+#booking-button {
+  height: 35px;
+  width: 110px;
+  background-color: rgb(90, 88, 88);
+  border-radius: 50px;
+  border: none;
+  font-size: 16px;
+  color: white;
+  padding-top: 1.5%;
+  padding-left: 1%;
 }
 
-#ig{
-    position: absolute;
-    border: 1px solid rgb(94, 91, 91);
-    width:1.8%;
-    height: 10px;
-    text-align: center;
-    border-radius: 50px;
-    padding-bottom: 0.8%;
-    padding-top: 0.5%;
-    top:5vh;
-    color: rgb(94, 91, 91);
-    left:95.5%;
+#booking-button:hover {
+  background-color: white;
+  color: black;
 }
 
-#facebook{
-    position: absolute;
-    border: 1px solid rgb(94, 91, 91);
-    width:1.8%;
-    height: 10px;
-    text-align: center;
-    border-radius: 100px;
-    padding-bottom: 0.8%;
-    padding-top: 0.5%;
-    color: rgb(94, 91, 91);; 
-    left: 93%;
-    top:5vh; 
+.feedbacks {
+  background-color: black;
+  height: 100vh;
 }
 
-#whatsapp{
-    position: absolute;
-    border: 1px solid rgb(192, 190, 190);
-    width:3%;
-    height: 30px;
-    font-size: 35px;
-    text-align: center;
-    border-radius: 100px;
-    padding-bottom: 0.8%;
-    padding-top: 0.5%;
-    color: rgb(212, 206, 206); 
-    top:90vh;
-    left: 94%;
+.review {
+  display: flex;
+  width: 40%;
+  margin: auto;
+  color: white;
+  text-align: center;
+  line-height: 2;
+  font-family: Quicksand;
+  font-weight: bold;
+}
+
+.ankole-logo img{
+  margin-top: 5%;
+  height: 200px;
+  width: 220px;
+  margin-left: 44%;
+}
+
+#quote-left {
+  color: orangered;
+  font-size: 60px;
+  right: 71%;
+  top: 35vh;
+  position: absolute;
+
+}
+
+#quote-right {
+  color: orangered;
+  font-size: 60px;
+  left: 75%;
+  bottom: 35%;
+  position: absolute;
+}
+
+.arrow-left:hover,
+.arrow-right:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.arrow-left,
+.arrow-right {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: 20%;
+  margin-left: 20%;
+  margin-top: -22px;
+  color: rgb(202, 191, 191);
+  font-size: 25px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.arrow-right {
+  right: 3%;
+  border-radius: 4px 0 0 4px;
+  position: fixed;
+}
+
+
+.arrow-left {
+  position: fixed;
+  left: 3%;
+  border-radius: 4px 0 0 4px;
+}
+
+.review-logo img {
+  width: 13%;
+  margin-left: 42.5%;
+}
+
+.social-media {
+  color: rgb(100, 96, 96);
+  margin-top: 5%;
+  margin-left: 90%;
+  position: fixed;
+  font-size: 200%;
+}
+
+
+@media only screen and (max-width: 300px) {
+
+  .arrrow-left,
+  .arrow-right {
+    font-size: 11px
+  }
+}
+
+.feedback {
+  animation-name: flow;
+  animation-duration: 1.5s;
+}
+
+@keyframes feedback {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
 }

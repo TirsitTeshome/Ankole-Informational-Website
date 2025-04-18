@@ -8,48 +8,116 @@ body {
     margin: auto;
     /* overflow: hidden; */
 }
-.navigation {
+
+.menu-pop-up {
+    position: relative;
+    display: inline-block;
+}
+.menu-list {
+    position: absolute;
+    top: -35vh;
+    width: 20vh;
+    padding: 100% 150%;
+    border-radius: 1rem;
+    display: none;
+    z-index: 20;
+    background-color: black;
+    margin-left: -100%;
+}
+
+
+.menu-pop-up:hover .menu-list {
+    display: block;
+}
+
+
+.open-hours {
+    position: relative;
+    display: inline-block;
+    line-height: 1.2;
+
+    h3 {
+        margin-bottom: 6%;
+    }
+
+    h4 {
+        margin-bottom: -3%;
+        font-weight: bolder;
+    }
+
+    i{
+        font-size: 23px;
+    }
+}
+
+.open-hours-detail {
+    top: -34vh;
+    width: 20vh;
+    margin-left: -100%;
+    display: none;
+    background-color: white;
+    position: absolute;
+    padding: 100% 150%;
+    border-radius: 1rem;
+    color: black;
+
+}
+
+.open-hours:hover .open-hours-detail {
+    color: black;
+    display: block;
+}
+
+nav {
     position: fixed;
     display: flex;
-    height: 50px;
-    width: 39%;
-    gap: 4%;
     background-color: black;
-    padding: 1%;
-    border-radius: 50px;
+    z-index: 7;
     position: absolute;
-    top: 90%;
+    bottom: 1%;
+    left: 50%;
+    width: 35%;
     align-items: center;
-    margin-left: 28%;
-    padding-left: 2%;
-    background-color: rgb(8, 8, 8);
+    padding: 0.8% 1.5%;
+    border-radius: 3rem;
+    border: 1px solid transparent;
+    justify-content: space-between;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    font-size: medium;
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+
+    i {
+        color: gray;
+        font-size: 23px;
+    }
+
+    a:hover {
+        color: gray;
+    }
 }
 
-.navigation a {
-    color: white;
-    text-decoration: none;
-}
 
-.navigation a:hover{
-    color: gray;
-}
-
-.navigation button {
-    height: 50px;
-    width: 150px;
+#booking-button {
+    height: 35px;
+    width: 110px;
     background-color: rgb(90, 88, 88);
-    border-radius: 30px;
+    border-radius: 50px;
     border: none;
-    font-size: 17px;
-    color:white
+    font-size: 16px;
+    color: white;
+    padding-top: 1.5%;
+    padding-left: 1%;
 }
 
-.navigation button:hover{
+#booking-button:hover {
     background-color: white;
     color: black;
-}
-#icon{
-    font-size: 22px;
 }
 
 .contact-icons{
@@ -58,54 +126,76 @@ body {
     border-color: white;
     position: relative;
 }
-
-/* #ig {
-    position: relative;
-    text-align: center;
-    border-radius: 50px;
-    padding-bottom: 0.8%;
-    padding-top: 0.5%;
-    top:7vh;
-    color: rgb(94, 91, 91);
-    left:93%;
-    font-size: 15px;
-  
-    a{
-        border: 1px solid rgb(94, 91, 91);
-        width:1.8%;
-        height: 10px;
-    }
+.contact-icons{
+    display: flex;
+    border-color: white;
+    font-size: 15px;  
 }
 
-#facebook{
-    position: relative;
-    border: 1px solid rgb(94, 91, 91);
-    width:1.8%;
+#ig{
+    position: absolute;
+    border: 2px solid rgb(94, 91, 91);
+    width:2%;
     height: 10px;
     text-align: center;
     border-radius: 100px;
-    padding-bottom: 0.8%;
-    padding-top: 0.5%;
-    color: rgb(94, 91, 91);; 
-    left: 93%;
-    top:7vh; 
-    font-size: 15px;
+    padding-bottom: 0.9%;
+    padding-top: 0.3%;
+    color: white; 
+    left: 92%;
+    top:-45vh; 
+    font-size: 22px;
+    color: rgb(184, 177, 177);
+
+    a{
+        text-decoration: none;
+        z-index: 5;
+        color: white;
+        
+        }
+}
+#facebook{
+    position: absolute;
+    border: 2px solid rgb(94, 91, 91);
+    width:1.9%;
+    height: 12px;
+    text-align: center;
+    border-radius: 120px;
+    padding-bottom: 0.7%;
+    padding-top: 0.4%;
+    color: white; 
+    left: 95%;
+    top:-45vh; 
+    font-size: 18px;
+    color: rgb(184, 177, 177);
+
+    a{
+        text-decoration: none;
+        z-index: 5;
+        color: white;
+        
+    }
 }
 
 #whatsapp{
-    position: relative;
-    border: 1px solid rgb(192, 190, 190);
-    width:3%;
-    height: 30px;
-    font-size: 35px;
-    text-align: center;
-    border-radius: 100px;
-    padding-bottom: 0.8%;
-    padding-top: 0.5%;
-    color: rgb(212, 206, 206); 
-    top:95vh;
-    left: 90%;
-} */
+    right: 4%;
+    border: 1px solid rgb(104, 102, 102);
+    font-size: xx-large;
+    bottom: 6%;
+    padding: 0.7% 0.9%;
+    border-radius: 50%;
+    background-color: rgb(22, 20, 20);
+    color: rgb(245, 241, 241);
+    position: absolute;
+    position: fixed;
+    a{
+        text-decoration: none;
+        z-index: 5;
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+    }
+}
 .event-places{
     display: flex;
     align-items: center;
