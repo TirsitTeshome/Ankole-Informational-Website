@@ -250,11 +250,11 @@ nav {
 
 
     .acoustic {
-        width: 100%;
+        width: 90%;
         height: 180vh;
         z-index: -1;
         align-items: center;
-overflow-x: hidden;
+        overflow-x: hidden;
     }
 
 
@@ -312,8 +312,8 @@ overflow-x: hidden;
     nav {
         position: absolute;
         left: 50%;
-        top:95%;
-        width: 90%;
+        top: 95%;
+        width: 85%;
         justify-content: space-between;
         transform: translate(-50%, -50%);
         font-size: 10px;
@@ -363,7 +363,7 @@ overflow-x: hidden;
 }
 
 
-@media only screen and (min-width: 431px) and (max-width: 768px){
+@media only screen and (min-width: 431px) and (max-width: 768px) {
 
 
     .acoustic {
@@ -401,7 +401,8 @@ overflow-x: hidden;
     .music-text {
         margin-top: -3%;
         margin-bottom: 10%;
-font-size: 20px;
+        font-size: 20px;
+
         p {
             color: orangered;
 
@@ -428,7 +429,7 @@ font-size: 20px;
         left: 50%;
         width: 85%;
         border-radius: 3rem;
-        top:96%;
+        top: 96%;
         border: none;
         justify-content: space-between;
         transform: translate(-50%, -50%);
@@ -457,13 +458,107 @@ font-size: 20px;
         color: rgb(245, 241, 241);
         position: absolute;
         position: fixed;
+    }
+}
 
-        a {
-            text-decoration: none;
-            z-index: 5;
-            color: white;
-            text-decoration: none;
-            cursor: pointer;
+
+
+
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+
+    .acoustic {
+        width: 100%;
+        position: absolute;
+        height: 250vh;
+        z-index: -1;
+    }
+
+    .live-pics {
+        display: inline;
+        position: absolute;
+        align-items: center;
+        color: white;
+        left: 15%;
+        width: 100%;
+        margin-top: 30%;
+    }
+
+    .live-pics img {
+        height: 700px;
+        width: 60%;
+        margin-right: -0%;
+        margin-bottom: 4%;
+        border-radius: 10px;
+    }
+
+    .music {
+        flex-direction: column;
+        color: white;
+        transition: transform 0.3s;
+        left: 30%;
+    }
+
+    .music-text {
+        margin-top: -3%;
+        margin-bottom: 10%;
+        font-size: 27px;
+
+        p {
+            color: orangered;
+
         }
+    }
+
+    .text {
+        margin-top: 1%;
+    }
+
+    .right-side {
+        display: flex;
+        margin-left: 30%;
+        margin-top: 8%;
+        margin-bottom: 20%;
+
+    }
+
+    nav {
+        position: fixed;
+        display: flex;
+        background-color: black;
+        position: absolute;
+        left: 50%;
+        width: 85%;
+        border-radius: 3rem;
+        top: 96%;
+        border: none;
+        justify-content: space-between;
+        transform: translate(-50%, -50%);
+        font-size: 17px;
+
+    }
+
+    #booking-button {
+        height: 25px;
+        width: 99px;
+        border-radius: 50px;
+        border: none;
+        font-size: 15px;
+        padding-top: 1.5%;
+        padding-left: 2%;
+    }
+
+    #whatsapp {
+        right: 50%;
+        border: 1px solid rgb(104, 102, 102);
+        font-size: 35px;
+        bottom: 1%;
+        padding: 0.5% 0.7%;
+        border-radius: 50%;
+        background-color: rgb(22, 20, 20);
+        color: rgb(245, 241, 241);
+        position: absolute;
+        position: fixed;
     }
 }

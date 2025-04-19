@@ -6,6 +6,7 @@
 body {
     font-family: poppins;
     margin: auto;
+    overflow-x: hidden;
 }
 
 .menu {
@@ -79,7 +80,7 @@ body {
         font-weight: bolder;
     }
 
-    i{
+    i {
         font-size: 23px;
     }
 }
@@ -289,13 +290,14 @@ nav {
 
 #sentences {
     margin-top: 4%;
+    font-size: 14px;
 }
 
-.contact-icons{
+.contact-icons {
     display: flex;
     gap: 0.7%;
     border-color: white;
-    font-size: 15px;  
+    font-size: 15px;
 }
 
 #whatsapp {
@@ -326,43 +328,46 @@ nav {
 
 
 
-
-
-
 @media only screen and (max-width: 430px) {
 
 
     .menu img {
-        height: 150px;
+        height: 100px;
         width: 250px;
-        margin-top: 1%;
-        margin-left: 5vh;
-        margin-bottom: 10%;
+        margin-top: 17%;
+        margin-left: 7vh;
+        margin-bottom: -1%;
     }
-    
+
     .menu-page {
-      flex-direction: column;
+        flex-direction: column;
         overflow-y: hidden;
         height: 100vh;
         font-size: 15px;
     }
 
+    #sentences {
+        margin-top: 4%;
+        width: 100%;
+        font-size: 14px;
+    }
+
     .left-section {
         width: 100%;
+        height: 1200vh;
     }
-    
+
     .right-section {
         width: 100%;
         background-color: black;
         color: white;
-        overflow-y: scroll;
     }
-    
+
     .list {
         width: 85%;
         margin: auto;
     }
-    
+
     .top-bar {
         display: flex;
         width: 100%;
@@ -370,12 +375,12 @@ nav {
         margin-left: -4%;
         font-size: 12px;
     }
-    
+
     .time {
         font-size: 12px;
         line-height: 0.7;
     }
-    
+
     .main {
         display: flex;
         width: 100%;
@@ -383,118 +388,511 @@ nav {
         color: orangered;
         font-size: 11px;
     }
-    
+
     .breakfast-list {
         line-height: 0.2;
         align-items: center;
     }
-    
+
     .prices {
         color: white;
         display: flex;
         justify-content: space-between;
-        line-height: 1.4;
-    
+        line-height: 1.15;
+
     }
-    
+
     .ankole-breakfast {
         margin-top: 8%;
     }
-    
+
     #ankole-logo {
         height: 80px;
         width: 100px;
     }
-    
+
     .breakfast-detail {
         line-height: 1.5;
-    
+
         p {
             font-size: 15px;
         }
     }
-    
+
     .breakfast-menu {
         display: flex;
         align-items: center;
         justify-content: space-between;
         margin-bottom: 2%;
         font-size: 10px;
-    
+
     }
-    
+
     .ankole-big {
         display: flex;
         gap: 3%;
         align-items: center;
         width: 80%;
     }
-    
+
     .soup-price {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        line-height: 0.4;
+        line-height: 0.9;
     }
-    
+
     #food {
         margin-top: 5%;
     }
-    
+
     #soup {
         margin-bottom: 2%;
         color: orangered;
     }
-    
-    .sandwich {
-        margin: 3%;
-        color: orangered;
-    
-    }
-    
-    #salad {
-        margin: 5% 0;
-        color: orangered;
-    }
-    
-    #orange-text {
-        color: orangered;
-        margin-top: 7%;
-        margin-bottom: 3%;
-    
-    }
-    
-    .fries {
-        margin-top: 7%;
-    }
-    
-    .wings {
-        margin-top: 7%;
-    }
-    
-    #sentences {
-        margin-top: 4%;
-    }
-    
-    .contact-icons{
+
+
+
+    .contact-icons {
         display: flex;
         gap: 0.7%;
         border-color: white;
-        font-size: 15px;  
+        font-size: 15px;
     }
-    
+
     #whatsapp {
-        right: 4%;
+        right: 10%;
         border: 1px solid rgb(104, 102, 102);
         font-size: xx-large;
-        bottom: 6%;
+        bottom: 55%;
         padding: 0.5% 0.7%;
         border-radius: 50%;
         background-color: rgb(22, 20, 20);
         color: rgb(245, 241, 241);
         position: absolute;
         position: fixed;
-    
+
+    }
+
+    .menu {
+        margin-top: 2%;
+        margin-left: 4%;
+        line-height: 0.6;
+
+        p {
+            color: white;
+            margin-left: 40%;
+            font-size: 20px;
+        }
+
+        h1 {
+            font-size: 50px;
+            color: orangered;
+            text-align: center;
+            margin-right: 7%;
+        }
+
+    }
+
+    nav {
+        position: absolute;
+        bottom: 90%;
+        left: 50%;
+        width: 92%;
+        font-size: 10px;
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+
+        i {
+            color: gray;
+            font-size: 15px;
+        }
+
+        a:hover {
+            color: gray;
+        }
+
+        #clock {
+            font-size: 15px;
+        }
+    }
+
+
+
+    #booking-button {
+        height: 22px;
+        width: 90px;
+        background-color: rgb(90, 88, 88);
+        border-radius: 50px;
+        border: none;
+        font-size: 13px;
+        color: white;
+        padding-top: 1.5%;
+        padding-left: 1%;
+    }
+
+}
+
+
+@media only screen and (min-width: 431px) and (max-width: 768px) {
+    .menu img {
+        height: 150px;
+        width: 250px;
+        margin-top: 15%;
+        margin-left: 30%;
+        margin-bottom: -8%;
+    }
+
+    .menu-page {
+        flex-direction: column;
+        overflow-y: hidden;
+        height: 120vh;
+        font-size: 15px;
+    }
+
+    #sentences {
+        margin-top: 4%;
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .left-section {
+        width: 100%;
+        height: 80vh;
+    }
+
+    .right-section {
+        width: 100%;
+        background-color: black;
+        color: white;
+    }
+
+    .list {
+        width: 85%;
+        margin: auto;
+        font-size: 15px;
+    }
+
+    .top-bar {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin-left: -4%;
+        font-size: 22px;
+    }
+
+    .time {
+        font-size: 17px;
+        line-height: 0.7;
+    }
+
+    .main {
+        display: flex;
+        width: 100%;
+        gap: 2%;
+        color: orangered;
+        font-size: 25px;
+    }
+
+    .breakfast-list {
+        line-height: 0.2;
+        align-items: center;
+        font-size: 55px;
+
+    }
+
+    .prices {
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        line-height: 1.4;
+        font-size: 20px;
+
+    }
+
+    .ankole-breakfast {
+        margin-top: 8%;
+    }
+
+    #ankole-logo {
+        height: 80px;
+        width: 100px;
+    }
+
+    .breakfast-detail {
+        line-height: 1.5;
+
+        p {
+            font-size: 18px;
+        }
+    }
+
+    .breakfast-menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 2%;
+        font-size: 20px;
+    }
+
+    .ankole-big {
+        display: flex;
+        gap: 3%;
+        align-items: center;
+        width: 80%;
+        font-size: 15px;
+    }
+
+    .soup-price {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        line-height: 0.9;
+        font-size: 14px;
+    }
+
+    #food {
+        margin-top: 5%;
+    }
+
+    #soup {
+        margin-bottom: 2%;
+        color: orangered;
+    }
+
+    #whatsapp {
+        right: 4%;
+        border: 1px solid rgb(104, 102, 102);
+        font-size: xx-large;
+        bottom: 35%;
+        padding: 0.5% 0.7%;
+        border-radius: 50%;
+        background-color: rgb(22, 20, 20);
+        color: rgb(245, 241, 241);
+        position: absolute;
+        position: fixed;
+    }
+
+    .menu {
+        margin-top: -3%;
+        margin-left: 3%;
+        line-height: 0.6;
+        padding-bottom: 2%;
+
+        p {
+            color: white;
+            margin-left: 39%;
+            font-size: 30px;
+        }
+
+        h1 {
+            font-size: 40px;
+            color: orangered;
+            text-align: center;
+            margin-right: 7%;
+        }
+
+    }
+
+    nav {
+        position: absolute;
+        bottom: 90%;
+        left: 50%;
+        width: 92%;
+        font-size: 16px;
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+
+        i {
+            color: gray;
+            font-size: 20px;
+        }
+
+        a:hover {
+            color: gray;
+        }
+
+        #clock {
+            font-size: 20px;
+        }
+    }
+
+
+
+    #booking-button {
+        height: 20px;
+        width: 90px;
+        background-color: rgb(90, 88, 88);
+        border-radius: 50px;
+        border: none;
+        font-size: 13px;
+        color: white;
+        padding-top: 1%;
+        padding-left: 1%;
+    }
+
+    .soup-price {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        line-height: 0.9;
+        font-size: 15px;
+    }
+
+}
+
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+
+    .menu img {
+        height: 170px;
+        width: 250px;
+        margin-top: 25%;
+        margin-left: 35%;
+        margin-bottom: -10%;
+    }
+
+    .menu-page {
+        flex-direction: column;
+        overflow-y: hidden;
+        height: 120vh;
+        font-size: 15px;
+    }
+
+    #sentences {
+        margin-top: 4%;
+        width: 100%;
+        font-size: 26px;
+    }
+
+    .left-section {
+        width: 100%;
+        height: 80vh;
+    }
+
+    .right-section {
+        width: 102%;
+        background-color: black;
+        color: white;
+    }
+
+    .list {
+        width: 85%;
+        margin: auto;
+        font-size: 15px;
+    }
+
+    .top-bar {
+        display: flex;
+        width: 95%;
+        justify-content: space-between;
+        margin-left: 0%;
+        font-size: 27px;
+    }
+
+    .time {
+        font-size: 25px;
+        line-height: 0.7;
+    }
+
+    .main {
+        display: flex;
+        width: 100%;
+        gap: 2%;
+        color: orangered;
+        font-size: 30px;
+    }
+
+    .breakfast-list {
+        line-height: 0.2;
+        align-items: center;
+        font-size: 55px;
+
+    }
+
+    .prices {
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        line-height: 0.8;
+        font-size: 26px;
+
+    }
+
+    .ankole-breakfast {
+        margin-top: 8%;
+    }
+
+    #ankole-logo {
+        height: 80px;
+        width: 100px;
+    }
+
+    .breakfast-detail {
+        line-height: 1.5;
+
+        p {
+            font-size: 28px;
+        }
+    }
+
+    .breakfast-menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 2%;
+        font-size: 20px;
+    }
+
+    .ankole-big {
+        display: flex;
+        gap: 3%;
+        align-items: center;
+        width: 80%;
+        font-size: 25px;
+    }
+
+    .soup-price {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        line-height: 0.9;
+        font-size: 14px;
+    }
+
+    #food {
+        margin-top: 5%;
+        font-size: 30px;
+    }
+
+    #soup {
+        margin-bottom: 2%;
+        color: orangered;
+        font-size: 30px;
+    }
+
+
+    #whatsapp {
+        right: 4%;
+        border: 1px solid rgb(104, 102, 102);
+        font-size: xx-large;
+        bottom: 35%;
+        padding: 0.5% 0.7%;
+        border-radius: 50%;
+        background-color: rgb(22, 20, 20);
+        color: rgb(245, 241, 241);
+        position: absolute;
+        position: fixed;
+
         a {
             text-decoration: none;
             z-index: 5;
@@ -505,25 +903,77 @@ nav {
     }
 
     .menu {
-        margin-top: 2%;
-        margin-left: 4%;
+        margin-top: -3%;
+        margin-left: 3%;
         line-height: 0.6;
-    
+        padding-bottom: 5%;
+
         p {
             color: white;
-            margin-left: 45%;
-            margin-top: 15%;
-            font-size: 25px;
+            margin-left: 43%;
+            font-size: 20px;
         }
-    
+
         h1 {
-            font-size: 60px;
+            font-size: 50px;
             color: orangered;
             text-align: center;
-            margin-right: 2%;
+            margin-right: 7%;
+        }
+
+    }
+
+    nav {
+        position: absolute;
+        bottom: 90%;
+        left: 50%;
+        width: 92%;
+        font-size: 25px;
+
+        i {
+            color: gray;
+            font-size: 30px;
+        }
+
+        #clock {
+            font-size: 30px;
         }
     }
-    
 
-    
+
+    #booking-button {
+        height: 20px;
+        width: 170px;
+        background-color: rgb(90, 88, 88);
+        border-radius: 50px;
+        border: none;
+        font-size: 25px;
+        color: white;
+        padding-top: 0.5%;
+        padding-bottom: 2%;
+        padding-left: 1%;
+    }
+
+    .soup-price {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        line-height: 0.9;
+        font-size: 23px;
+    }
+
+    #salad {
+        margin: 5% 0;
+        color: orangered;
+        font-size: 30px;
+    }
+
+    .sandwich {
+        margin: 3%;
+        color: orangered;
+        font-size: 80px;
+
+
+    }
+
 }

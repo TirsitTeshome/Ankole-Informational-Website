@@ -514,3 +514,100 @@ nav {
 
  
  
+
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+  nav {
+    position: absolute;
+    bottom: 1%;
+    left: 50%;
+    width: 87%;
+    font-size: 22px;
+
+    i {
+        color: gray;
+        font-size: 30px;
+    }
+
+    #clock{
+        font-size: 30px;
+    }
+}
+
+
+#booking-button {
+    width: 150px;
+    font-size: 22px;
+    padding-top: 0.6%;
+    padding-left: 0.8%;
+}
+
+#facebook {
+    position: absolute;
+    width: 5%;
+    height: 15px;
+    left: 90%;
+    top: 5vh;
+}
+
+#whatsapp {
+    right: 85%;
+    bottom: 92%;
+    padding: 0.5% 0.7%;
+    position: absolute;
+}
+
+#ig {
+    position: absolute;
+    width: 5%;
+    height: 15px;
+    text-align: center;
+    border-radius: 70px;
+    padding-bottom: 0.9%;
+    padding-top: 0.7%;
+    top: 5vh;
+    left: 83%;
+}
+
+.review {
+  display: flex;
+  width: 70%;
+  font-size: x-large;
+}
+
+.ankole-logo img{
+  margin-top: 15%;
+  height: 200px;
+  width: 220px;
+  margin-left: 39%;
+}
+
+#quote-left {
+  right: 83%;
+  top: 35vh;
+  position: absolute;
+}
+
+#quote-right {
+  left: 88%;
+  bottom: 41%;
+  position: absolute;
+}
+
+.arrow-right {
+  right: -9%;
+  top: 50%;
+  border-radius: 4px 0 0 4px;
+  position: fixed;
+}
+
+
+.arrow-left {
+  position: fixed;
+  left: -13%;
+  top:45%;
+  border-radius: 4px 0 0 4px;
+}
+
+}

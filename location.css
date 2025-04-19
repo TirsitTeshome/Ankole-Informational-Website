@@ -532,3 +532,129 @@ nav {
         left: 83%;
     }
 }
+
+
+
+
+
+
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+    .location {
+        flex-direction: column;
+        position: relative;
+        font-size: 29px;
+    }
+    
+    .kitisuru {
+        height: 80vh;
+        background-size: cover;
+        width: 100%;
+        color: white;
+        text-align: center;
+        top: 20%;
+        margin: auto;
+    
+    }
+
+    
+    .kilimani {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Ankole/location2.jpg);
+        height: 80vh;
+        width: 100%;
+        color: white;
+        text-align: center;
+    
+    }
+    
+    .kilimani a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    #text {
+        margin-top: 35%;
+    
+        h1 {
+            font-size: 50px;
+        }
+    
+        line-height: 0.8;
+    }
+    
+    .logo {
+        position: relative;
+        display: inline-block;
+        top: -110vh;
+        margin-left: 35%;
+    
+        img {
+            height: 500px;
+            width: 270px;
+        }
+    }
+    nav {
+        position: absolute;
+        bottom: -60%;
+        left: 50%;
+        width: 93%;
+        font-size: 22px;
+    
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    
+    
+        i {
+            color: gray;
+            font-size: 25px;
+        }
+    
+        a:hover {
+            color: gray;
+        }
+
+        #clock{
+            font-size: 25px;
+        }
+    }
+    
+    
+    #booking-button {
+        height: 28px;
+        width: 130px;
+        font-size: 20px;
+        color: white;
+        padding-top: 0.5%;
+        padding-bottom: 0.5%;
+      
+    }
+
+    #facebook {
+        position: fixed;
+        width: 5%;
+        height: 15px;
+        left: 90%;
+        top: 4.8vh;
+    }
+    
+    #whatsapp {
+        right: 8%;
+        bottom: 21%;
+        /* position: fixed; */
+    }
+
+
+    #ig {
+        position: fixed;
+        border: 1px solid rgb(94, 91, 91);
+        width: 5%;
+        height: 15px;
+        top: 5vh;
+        left: 83%;
+    }
+   
+
+}
